@@ -1,38 +1,54 @@
-.App {
+*{
+  font-family: 'Orienta', sans-serif;
+}
+.container{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.span-q{
+  transform: rotate(
+    56deg);
+        display: inline-block;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-radio-wrapper{
+  margin-right: 54px !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ant-layout-header{
+  background: black !important;
+  box-shadow: 1px 1px 12px -3px #8080806b;
 }
-
-.App-link {
-  color: #61dafb;
+.ant-menu-overflow{
+  background: black !important;
 }
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected{
+  color: white !important;
+}
+.site-layout-content{
+  padding: 20px 0px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+/* #f0a500 */
+.filters{
+
+}
+h2{
+  color: #f0a500 !important;
+}
+.ant-btn-primary{
+  border-color: #f0a500 !important;
+  background: #f0a500 !important;
+  color: black !important;
+}
+.ant-radio-checked::after{
+  border: 1px solid #f0a500 !important;
+}
+.ant-radio-checked .ant-radio-inner{
+  border-color: #f0a500 !important;
+}
+.ant-radio-inner::after{
+  background-color:#f0a500 !important;
 }
