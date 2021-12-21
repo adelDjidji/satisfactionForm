@@ -11,7 +11,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route exact path="/login" element={<Login />}/> */}
         <Route exact path="/" element={<Dashboard />} />
         <Route exact path="/CDI-questions/:clientID" element={<QuestionaryBilan company={"cdi"} />} />
         <Route exact path="/CDI-questionsRDV/:clientID" element={<QuestionaryRDV company={"cdi"} />} />

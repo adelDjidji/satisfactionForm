@@ -29,30 +29,25 @@ export default function Questionary(props) {
   ];
 
   const handleSubmit = () => {
-    
-    
-    const data= {
+    const data = {
       clientID,
       company,
-      answers
-    }
+      answers,
+    };
 
     // Edit endpoint here -------------------<<<<<<<<<<<<<<<<<<<<<<<<<|||||<<<<<||||<<<
-    fetch(API_URL+"/formualre", {
-      method:"POST",
-      headers:{'accept':"application/json", 'authorisation':"Bearer "},
-      body:JSON.stringify(data)
+    fetch(API_URL + "/formualre", {
+      method: "POST",
+      headers: { accept: "application/json", authorisation: "Bearer " },
+      body: JSON.stringify(data),
     })
-    .then(res=>res.json())
-    .then(res=>{
-
-    })
-    .catch(err=>{
-      alert("Une erreur s'est produit")
-      console.log(err)
-    })
-  }
-  
+      .then((res) => res.json())
+      .then((res) => {})
+      .catch((err) => {
+        alert("Une erreur s'est produit");
+        console.log(err);
+      });
+  };
 
   return (
     <div style={{ padding: "3em" }}>
@@ -80,11 +75,8 @@ export default function Questionary(props) {
           alt="BVTC"
         />
       )}
-
       <br />
-
       <hr />
-
       <Title level={3}>
         Le formulaire de satisfaction pour mesurer la qualité de nos RDV
       </Title>

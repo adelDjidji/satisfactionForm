@@ -100,7 +100,6 @@ export default function Questionary(props) {
         </Col>
         <br />
         <br />
-
         {questionList_part2.map((qst, index) => (
           <>
             <Col span={12}>
