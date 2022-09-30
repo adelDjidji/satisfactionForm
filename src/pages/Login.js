@@ -9,6 +9,7 @@ import {
 import { Form, Input, Button, Checkbox } from "antd";
 
 const FormLogin = () => {
+    let navigate = useNavigate();
   console.log('%cLogin.js line:13 hello Manel', 'color: #007acc;');
   const onFinish = (values) => {
     console.log("Success:", values);
